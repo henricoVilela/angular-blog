@@ -11,3 +11,14 @@
 a{
   text-decoration: none;
 }
+
+
+/* Media query para telas médias */
+@media screen and (max-width: 800px) {
+
+}
+
+/* Media query para telas pequenas */
+@media screen and (max-width: 600px) {
+
+}
