@@ -1,24 +1,82 @@
 /* You can add global styles to this file, and also import other style files */
-*{
-  margin:0;
-  padding:0;
+* {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
   background-color: #111111;
-  color:white;
+  color: white;
   font-family: 'Segoe UI';
 }
 
-a{
+a {
   text-decoration: none;
 }
 
 
 /* Media query para telas médias */
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 601px) and (max-width: 950px) {
+
+  .container__articles {
+    flex-direction: column !important;
+    margin: 30px 5rem;
+  }
+
+  .articles__main,
+  .articles__others {
+    flex: 0 0 100%;
+  }
+
+  .container__big-card {
+    margin: 0 !important;
+    width: 100% !important;
+  }
+
+  .big-card__photo {
+    width: 100%;
+  }
+
+  .container__small-card {
+    width: 100% !important;
+  }
+
+  .small-card__title>h1 {
+    font-size: 22px !important;
+  }
 
 }
 
 /* Media query para telas pequenas */
 @media screen and (max-width: 600px) {
+  .container__articles {
+    flex-direction: column !important;
+    margin: 20px 15px;
+  }
 
+
+  .articles__main,
+  .articles__others {
+    flex: 0 0 100%;
+  }
+
+  .container__big-card {
+    margin: 0 !important;
+    height: 350px !important;
+    width: 100% !important;
+  }
+
+  .big-card__photo {
+    width: 100%;
+  }
+
+  .big-card__photo>img {
+    min-width: 300px !important;
+  }
+
+  .container__small-card {
+    width: 100% !important;
+  }
+
+  .small-card__title>h1 {
+    font-size: 18px !important;
+  }
 }
