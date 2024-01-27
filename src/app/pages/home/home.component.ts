@@ -8,12 +8,14 @@ import { dataFake } from 'src/app/data/dataFake';
 })
 export class HomeComponent implements OnInit {
 
-  public noticiasSecundarias: any = [];
+  public noticiasSecundarias: any[] = [];
+  public noticiaPrincipal: any ;
 
   constructor() { }
 
   ngOnInit(): void {
     this.noticiasSecundarias = dataFake.filter(data => !data.principal);
+    this.noticiaPrincipal = dataFake.filter(data => data.principal)[0];
   }
 
 }
