@@ -79,4 +79,22 @@ a {
   .small-card__title>h1 {
     font-size: 18px !important;
   }
+
+  .container__content {
+    padding: 20px;
+  }
+
+  .content__cover {
+    width: 100% !important;
+
+    img {
+      width: 100% !important;
+      height: auto !important;
+      min-width: auto !important;
+    }
+  }
+
+  .content__description {
+    text-align: justify;
+  }
 }

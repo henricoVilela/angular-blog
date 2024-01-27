@@ -11,7 +11,7 @@
   </div>
   <div class="articles__others scrollbar__custom">
     <ng-container *ngFor="let noticia of noticiasSecundarias">
-      <app-small-card Id="2" 
+      <app-small-card [Id]="noticia.id" 
         [cardTitle]="noticia.title"
         [photoCover]="noticia.photoCover">
       </app-small-card>
